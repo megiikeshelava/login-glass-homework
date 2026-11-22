@@ -1,0 +1,172 @@
+body{
+    background: radial-gradient(#0085FF, #003465);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.login-wrapper{
+    max-width:1366px;
+    width: 100%;
+    height: 768px;
+    margin: 158px auto;
+    background: rgba(3, 24, 58, 0.28); 
+    border-radius: 24px;
+    display: grid;
+    place-content: center;
+    color: white;
+    position: relative;
+
+
+    .login-card{
+        max-width: 410px;
+        padding: 40px 80px;
+        text-align: center;
+        background: rgba(88, 130, 193, 0.28);
+        backdrop-filter: blur(17.79px);
+        border:2.13px solid #5882C17D;
+        border-radius: 28px;
+        transition-duration: 0.2s;
+
+        a{
+            span{
+                font-size: 24px;
+                line-height: 100%;
+                color: white;
+
+            }
+        }
+
+        .wrapper{
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            /* align-items: flex-start; */
+            
+            h4{
+                line-height: 100%;
+                font-size: 24px;
+                align-self: flex-start;
+            }
+
+            .for-input {
+                display: flex;
+                flex-direction: column;
+                /* align-items: flex-start; */
+
+
+                label{
+                    line-height: 100%;
+                    font-size: 13px;
+                    margin-bottom: 8px;
+                    align-self: flex-start;
+                }
+
+                input{
+                    padding-block: 8px;
+                    padding-left: 16px;
+
+                    &::placeholder{
+                        color: #BCBEC0;
+                        font-size: 13px;
+                        line-height: 100%;
+                    }
+                }
+                #email{
+                    margin-bottom: 16px;
+                }
+                a{
+                    color: white;
+                    line-height: 100%;
+                    font-size: 13px;
+                    margin-top: 10px;
+                    align-self: flex-start;
+                    transition-duration: 0.2s;
+
+                     &:hover{
+                        transform: translateY(5px) scale(1.03);
+                    } 
+
+                }
+            }
+
+            button{
+                background-color: #003465;
+                padding: 10px 100px;
+                font-size: 16px;
+                line-height: 100%;
+                color: white;
+                border: 0;
+                border-radius: 7.11px;
+                cursor: pointer;
+                transition-duration: 0.2s;
+
+                &:hover{
+                    transform: translateY(-3px) scale(1.03);
+                    box-shadow: 0 10px 22px black;         
+                }
+            }
+
+            p{
+                line-height: 100%;
+                font-size: 13px;
+            }
+
+            .socials-wrapper{
+                display: flex;
+                gap: 17px;
+
+                .social-bg{
+                    padding: 9px 27px;
+                    background-color: white;
+                    border-radius: 7px;
+                    border: 0.71px solid #BCBEC0;
+                    transition-duration: 0.2s;
+
+
+                    svg{
+                        width: 17px;
+                        height: 17px;
+                    }
+
+                    &:hover{
+                        transform: translateY(-3px) scale(1.03);
+                        box-shadow: 0 10px 22px rgb(157, 157, 157);         
+                    } 
+                }
+            }
+
+            p:has(a){
+                font-size: 10px;
+                transition-duration: 0.2s;
+
+
+                a{
+                    font-weight: bold;
+                    color: white;
+                }
+
+                &:hover{
+                    transform: translateY(5px) scale(1.03);
+                } 
+            }
+
+        }
+
+        &:hover{
+            transform: translateY(5px) scale(1.03);
+            box-shadow: 3px 15px 10px #003465;
+        } 
+
+    }
+
+    /* .waves{
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        display: flex;
+        flex-direction: column;
+    } */
+}
+
